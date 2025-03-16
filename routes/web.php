@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', function () {
+    return 'Laravel fonctionne sur Railway !';
+});
 
 
 Route::prefix('/yonnee')->controller(App\Http\Controllers\AuthController::class)->group(function(){ 
